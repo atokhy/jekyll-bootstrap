@@ -66,6 +66,11 @@ JB :
   #
   ASSET_PATH : false
 
+  # Path to a custom bootstrap CSS theme
+  bootstrap_css_path : https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/spacelab
+  bootstrap_js_path : https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js
+  jquery_js_path : https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2
+
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
