@@ -1,36 +1,46 @@
 ---
 layout: page
-title: Wisdom Bone
-tagline: Neither wisdom tooth nor wish bone
+title: Hello World!
+tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-# Introduction
+Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
-Welcome to an attempt at creating an online prescene I can control.  In the advent of social media, we have started to trade off some of our liberties for the convenience of liking status updates.  This has dumbed down our ability to express ourselves.
+Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-## One fateful day
+## Update Author Attributes
 
-I failed an interview, no, many interviews actually.  I have slowly crept away from the activity I used to enjoy very much, and turns out businesses rather prefer to install baked solutions written by others, than having to write these solutions themselves.  Sure, it makes sense and all, just download an open source project, build it, and then you pay no licensing costs having to operate this software for your business while making updates to the code.  At least some contributions are made back.
+In `_config.yml` remember to specify your own data:
+    
+    title : My Blog =)
+    
+    author :
+      name : Name Lastname
+      email : blah@email.test
+      github : username
+      twitter : username
 
-Despite the growing list of obscure technologies I have to deal with, this has kept me away from an important skill: writing good code.  Most of my work has been packaging software for use, but rarely have I worked on a project from its inception.
+The theme should reference these variables whenever needed.
+    
+## Sample Posts
 
-## Attempts at overcompensation
+This blog contains sample posts which help stage pages and blog data.
+When you don't need the samples anymore just delete the `_posts/core-samples` folder.
 
-Perhaps another reason for this page is an attempt at overcompensating for failure.  In the process, I have gotten rid of my social network prescence and now only have a fledging github.  The traditional resume lacks a very important feature: an actual demonstration of skills.
+    $ rm -rf _posts/core-samples
 
-Recruiters can fall victim to [SEO](http://en.wikipedia.org/wiki/Search_engine_optimization) techniques which make some candidates look better than others, prioritizing them ahead in getting interviews.  However, after understanding that I have bested the system, while failing every interview in the process, I have realized that interviews are wasting my time, and other peoples time as well.
-
-## This is a portfolio 
-
-It makes perfect sense.  Instead of having a list of skill keywords on a professional networking site, it may make more sense to actually demonstrate skills as blog posts.  This is just a better attempt at showing off.
-
-## Welcome to my portfolio
+Here's a sample "posts list".
 
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+## To-Do
+
+This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
+We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
