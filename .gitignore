@@ -10,3 +10,6 @@ Thumbs.db
 .rvmrc
 .env
 s3_website.yml
+_posts
+index.md
+_config.yml
