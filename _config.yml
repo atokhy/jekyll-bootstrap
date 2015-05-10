@@ -2,20 +2,20 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".env", "s3_website.yml", ".gitignore"]
 highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : Wisdom Bone
+tagline: Neither wish bone nor wisdom tooth
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Aaron Tokhy
+  email : atokhy@gmail.com
+  github : https://github.com/atokhy
+#  twitter : username
+#  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://aaron.tokhy.me
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -67,7 +67,7 @@ JB :
   ASSET_PATH : false
 
   # Path to a custom bootstrap CSS theme
-  bootstrap_css_path : https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/spacelab
+  bootstrap_css_path : https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.4/flatly
   bootstrap_js_path : https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js
   jquery_js_path : https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2
 
